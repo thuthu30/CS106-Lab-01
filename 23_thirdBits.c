@@ -6,9 +6,11 @@
  *   Max ops: 8
  *   Rating: 1
  */
+ ///                       4.   9
+ //  0010 0100 1001 0010 0100 1001
 int thirdBits(void)
 {
-    return 2;
+    return 0x49 | 0x49 << 24 | 0x49<<9 | 0x49 << 18;
 }
 
 int test_thirdBits(void)

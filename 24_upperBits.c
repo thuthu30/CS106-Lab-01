@@ -10,7 +10,8 @@
  */
 int upperBits(int n)
 {
-    return 2;
+    int mask= (~0 << (32 + ~n + 1)) ;
+    return mask & (~!!n + 1);
 }
 
 int test_upperBits(int x)
